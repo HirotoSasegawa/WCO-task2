@@ -1,0 +1,32 @@
+<p id="notice"></p>
+<h1>Books</h1>
+
+<table>
+  <thread>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thread>
+</table>
+
+
+<h2>New book</h2>
+<form class="new_book" id="new_book" action="/book" accept-charset="UTF-8" method="post">
+  <input name="utf8" type="hidden" value="✓">
+  <input type="hidden" name="authenticity_token" value="95Ihw2+aGZfHfZUSL7Jt2HqDoZsOQrBhjTfeFJ6dxq10/9ePRDlOAfQJBXu5FJ4S2YlTNm0oJnBj8dI3Z9BafA==">
+  
+  <div class="field">
+    <label for="book_title">Tiltle</label>
+    <input class="book_title" type="text"  name="book[tile]" id="book_title">
+  
+  <div class="field">
+    <label for="book_body">Body</label>
+    <textarea class="book_body" name="book[body]" id="book_body"></textarea>
+  </div> 
+  
+  <div class="acttions">
+    <input type="submit" name="commit" value="Create Book" fate-disable-with="Create Book">
+  </div>
+</form>
